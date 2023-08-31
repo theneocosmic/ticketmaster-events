@@ -3,6 +3,12 @@ Exercise with React and Vite, consuming Ticket master WebAPI. This exercise cove
 
 I hope it can be useful for you.
 Regards!
+
+<h3>Home Events Screen</h3>
 <img src="https://raw.githubusercontent.com/theneocosmic/ticketmaster-events/master/src/assets/HomeEvents.png" alt="Home Events">
+
+<h3>Event Detail Screen</h3>
 <img src="https://raw.githubusercontent.com/theneocosmic/ticketmaster-events/master/src/assets/EventDetail.png" alt="Event Detail">
-<img src="https://raw.githubusercontent.com/theneocosmic/ticketmaster-events/master/src/assets/MyFavoriteEvents.png" alt="Event Detail">
+
+<h3>My Favorite Events Screen</h3>
+<img src="https://raw.githubusercontent.com/theneocosmic/ticketmaster-events/master/src/assets/MyFavoriteEvents.png" alt="My Favorite Events">
