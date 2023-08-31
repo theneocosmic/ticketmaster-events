@@ -1,0 +1,31 @@
+.active{
+    border-bottom: 1px solid blue;
+}
+
+.tab{
+    padding-bottom: 4px;
+    padding-right: 5px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight: 600;
+    transition:opacity 0.2s ease;
+
+}
+
+.tab:hover{
+    opacity: 0.8;
+}
+
+.tabsContainer{
+    margin-bottom: 12ox 0;
+}
+
+.homeLink{
+    color:red;
+    text-decoration:none;
+}
+
+
+.fontAwesome {
+    font-family: Helvetica, 'FontAwesome', sans-serif;
+  }
