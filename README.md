@@ -4,6 +4,10 @@ Exercise with React and Vite, consuming Ticket master WebAPI. This exercise cove
 I hope it can be useful for you.
 Regards!
 
+Ejercicio de React con Vite, en este proyecto se consume el servicio de Ticket Master API para obtener la lista de eventos en México. 
+Practicando y cubriendo varios temas como React Hooks, React Forms, router-dom, useState, useNavigate, memo, useEffect,forwardRef, useImperactiveHandle, Link, Zustaland como manejador de estado.
+Agregando Bootstrap y FontAwesome
+
 <img src="https://raw.githubusercontent.com/theneocosmic/ticketmaster-events/master/src/assets/TicketMasterGif.gif" alt="Gif proyecto">
 
 <h3>Home Events Screen</h3>
