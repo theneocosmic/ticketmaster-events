@@ -1,8 +1,14 @@
 # React + Vite
+Exercise with React and Vite, consuming Ticket master WebAPI. This exercise covers different types of tools in the React project. React Hook, React Forms, react-router-dom, useState, useNavigate, memo, useEffect, forwardRef, useImperativeHandle, Link, Zustand manager state among others.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I hope it can be useful for you.
+Regards!
 
-Currently, two official plugins are available:
+<h3>Home Events Screen</h3>
+<img src="https://raw.githubusercontent.com/theneocosmic/ticketmaster-events/master/src/assets/HomeEvents.png" alt="Home Events">
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h3>Event Detail Screen</h3>
+<img src="https://raw.githubusercontent.com/theneocosmic/ticketmaster-events/master/src/assets/EventDetail.png" alt="Event Detail">
+
+<h3>My Favorite Events Screen</h3>
+<img src="https://raw.githubusercontent.com/theneocosmic/ticketmaster-events/master/src/assets/MyFavoriteEvents.png" alt="My Favorite Events">
