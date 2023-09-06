@@ -21,7 +21,7 @@ margin:0;
 overflow:hidden;
 text-overflow: ellipsis;
 display:-webkit-box;
--webkit-line-clamp:5;
+-webkit-line-clamp:3;
 -webkit-box-orient:vertical;
 
 }
@@ -34,6 +34,18 @@ margin-top:8px;
     position:relative;
 }
 
+.imageEvent{
+    margin:10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+
+}
+
+.dateContainer{
+    /* position:relative; */
+}
+
 .hearthImage{
     position:absolute;
     width: 25px;
@@ -42,4 +54,118 @@ margin-top:8px;
     z-index:1;
     cursor:pointer;
 
+    
+
 }
+
+.monthParagraph{
+font-size:1.5em;
+line-height: 1.2;
+text-align: center;
+}
+.dayParagraph{
+    font-size:3em;
+    line-height:1;
+    text-align: center;
+}
+
+.rigthSide{
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.infoContainer{
+    border-top: 1px solid rgb(191, 191, 191);
+    text-align: left;
+}
+
+.fontAwesome {
+    font-family: Helvetica, 'FontAwesome', sans-serif;
+  }
+
+  @media only screen and (max-width: 1441px) and (min-width: 1025px) {
+   
+    .hearthImage{
+        width:60px;
+        cursor:pointer;
+        margin: 0;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        right: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    
+    }
+}
+
+  @media only screen and (max-width: 1024px) and (min-width: 769px){
+   
+    .hearthImage{
+        cursor:pointer;
+        margin: 0;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        right: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    
+    }
+}
+
+  @media only screen and (max-width: 769px) {
+    .imageEvent{
+        margin:20px;
+        border-radius: 10px;
+        width: 80px;
+        height: 80px;
+    
+    }
+
+    .hearthImage{
+        cursor:pointer;
+        margin: 0;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        right: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .imageEvent{
+       display:none;
+       width: 80px;
+       height: 80px;
+    }
+
+    .imageEventSection{
+        display: none;
+    }
+
+    .dateContainer{
+        position:relative;
+        text-align: center;
+    }
+
+    .hearthImage{
+        cursor:pointer;
+        margin: 0;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        right: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    
+    }
+
+  }
+
+
+  

@@ -1,9 +1,9 @@
 import EventItem from './components/EventItem';
 import { useNavigate } from 'react-router-dom';
 import { memo, useState } from 'react';
+import eventFetcher from '../../utils/fetchEvents'
 
 const Events = ({ searchTerm,events }) => {
-   
 const navigate = useNavigate();
 
     const handleEventItemClick = (id) => {
@@ -13,15 +13,14 @@ const navigate = useNavigate();
 
     const renderEvents = () => {
 
+        if(searchTerm.length > 0){
+            eventFetcher(`keyword=${searchTerm}`);
+        }
+        
         let eventsFiltered = events;
-            if(searchTerm.length > 0){
-                eventsFiltered = eventsFiltered.filter((item)=> 
-                item.name.toLowerCase().includes(searchTerm));
-            }
-            console.log(eventsFiltered.length);
 
             if(eventsFiltered.length > 0){
-
+                // setTotalEvents(eventsFiltered.length);
                 return eventsFiltered.map((eventItem) => (
                     <EventItem 
                     key={`event-item-${eventItem.id}`} 
@@ -29,6 +28,7 @@ const navigate = useNavigate();
                     info={eventItem.info}
                     image={eventItem.images[0].url}
                     id = {eventItem.id}
+                    fecha={eventItem.dates.start.dateTime}
                     onEventClick={handleEventItemClick}
                     />
                     ));
@@ -40,6 +40,7 @@ const navigate = useNavigate();
 
         return(<div>
             <h2>Eventos</h2>
+            {searchTerm.length > 0 && <p>Total de eventos encontrados {events.length}</p>}
            {renderEvents()}
         </div>)
 };

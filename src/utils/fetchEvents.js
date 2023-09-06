@@ -16,4 +16,5 @@ const fetchData = (eventId) => {
     };
 };
 
+
 export default fetchData;
